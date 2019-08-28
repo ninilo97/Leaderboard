@@ -47,11 +47,7 @@
 			</props>
 		</property>
 	</bean>
-
-	<bean id="preConfiguredMessage" class="org.springframework.mail.SimpleMailMessage">
-		<property name="from" value="nikhil.londhe@lntinfotech.com"></property>
-	</bean>
-
+	
 	<!-- This bean will manage the transactions for us, so no need to manually 
 		write the code to begin/commit/rollback we just need to use @Transactional 
 		annotation -->
