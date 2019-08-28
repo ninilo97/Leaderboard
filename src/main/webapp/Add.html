@@ -5,7 +5,6 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="resources/css/Add.css" />
 <script src="resources/javascript/jquery-3.4.1.js"></script>
-<script src="resources/javascript/jquery-ui.js"></script>
 <script src="resources/javascript/Add.js"></script>
 </head>
 <body>
@@ -19,29 +18,38 @@
 					<input type="text" id="name" class="idle"></input>
 				</div>
 
-
 				<div id="" class="lfield">
-					<div id="" class="desc">Title</div>
-					<input type="text" id="title" class="idle"></input>
+					<div id="" class="desc" class="idle">Title</div>
+					<input type="text"  list="titleList" id="title" class="idle"></input>
+					<datalist id="titleList">
+						<option value="Hardcoded 1">
+						<option value="Hardcoded 2">
+					</datalist>
 				</div>
 
 				<div id="" class="lfield">
 					<div id="" class="desc">Description</div>
-					<textarea id="title" class="idle" rows="4" cols="50"></textarea>
+					<textarea id="description" class="idle" rows="4"></textarea>
 				</div>
 
 				<div id="" class="lfield">
 					<div id="" class="desc">From Date</div>
-					<input type="date" id="dob" class="idle"></input>
+					<input type="date" id="fromDate" class="idle"></input>
 				</div>
 				
 				<div id="" class="lfield">
 					<div id="" class="desc">To Date</div>
-					<input type="date" id="dob" class="idle"></input>
+					<input type="date" id="toDate" class="idle"></input>
+				</div>
+				
+				
+				<div id="" class="lfield">
+					<div id="errorField" class="errorField">
+					</div>
 				</div>
 				
 				<div id="btnDiv1" class="btnDiv lfield">
-					<input type="button" id="chk1" class="fbtn" value="Next" />
+					<input type="button" id="chk1" class="btn" value="Next" />
 				</div>
 			</fieldset>
 		</form>
