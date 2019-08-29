@@ -10,10 +10,8 @@ public class GenericDao {
 
 	@PersistenceContext
 	private EntityManager entityManager;
-	
-	public Object save(Object obj)
-	{
-		return entityManager.merge(obj);
-		
+
+	public void save(Object obj) {
+		entityManager.merge(obj);
 	}
 }

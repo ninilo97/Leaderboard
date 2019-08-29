@@ -14,12 +14,18 @@ input[type=date] {
 }
 
 input{
+	padding: 0.2em;
 	text-indent : 5px;
+	box-sizing : border-box;
 }
 
 #errorField{
 	font-weight: 600;
     color:#FF0000;
+}
+
+.noerror{
+    color:#007f00 !important;
 }
 
 body{
@@ -37,14 +43,14 @@ body{
 }
 
 .form input:not([class="btn"]):not([class="checkbox"]){
-    width: 100%;
+	width: 100%;
 	height: 25px;
 	border: 1px solid grey;
 	border-radius: 3px;
 }
 
 #description {
-    width: 100%;
+	width: 98.5%;
 	border: 1px solid grey;
 	border-radius: 3px;
 }
@@ -60,8 +66,8 @@ body{
 .form .lfield {
     width: auto;
     height: auto;
-    margin: 0 auto;
-    padding: 10px;
+	margin: 0 auto;
+    padding: 10px 15px 10px 15px;
 }
 
 .form select{
@@ -92,7 +98,9 @@ body{
     margin: 0 auto;
     padding: 10px;
     position: relative;
+	font-family:"Arial";
 	font-weight:600;
+	color: #00008C;
 	font-size:30px;
 }
 
@@ -110,7 +118,7 @@ body{
 	background: #00BBF2;
 	background: -webkit-linear-gradient(to right, #00BBF2, #242F92);
 	background: linear-gradient(to right, #00BBF2, #242F92);
-	box-shadow:0 3px 3px 0 rgba(0,0,0,.5);
+	box-shadow:1px 3px 3px 1px rgba(0,0,0,.5);
 	//#00BBF2
 	//#242F92
 }

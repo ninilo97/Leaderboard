@@ -5,36 +5,43 @@ import java.time.LocalDate;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
-import org.springframework.web.multipart.MultipartFile;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "TB_LEADERBOARD")
 public class CardEntity {
+
 	@Id
-	@GeneratedValue
-	private int refno;
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "leaderboard_seq")
+	@SequenceGenerator(name = "leaderboard_seq", sequenceName = "leaderboard_seq", allocationSize = 1)
+	@Column(name = "ID")
+	private int id;
+	// leaderboard_seq
 
+	@Column(name = "NAME")
 	private String name;
-	private String description;
-	private MultipartFile img;
-	
-	@Column(name="FROMDATE")
+
+	@Column(name = "TITLE")
+	private String title;
+
+	@Column(name = "DESCRIPTION")
+	private String desc;
+
+	@Column(name = "FROM_DATE")
 	private LocalDate fromDate;
-	
-	@Column(name="TODATE")
+
+	@Column(name = "TO_DATE")
 	private LocalDate toDate;
-	
-	public CardEntity() {
-		// TODO Auto-generated constructor stub
+
+	public int getId() {
+		return id;
 	}
 
-	public int getRefno() {
-		return refno;
-	}
-
-	public void setRefno(int refno) {
-		this.refno = refno;
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getName() {
@@ -45,20 +52,20 @@ public class CardEntity {
 		this.name = name;
 	}
 
-	public String getDescription() {
-		return description;
+	public String getTitle() {
+		return title;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
-	public MultipartFile getImg() {
-		return img;
+	public String getDesc() {
+		return desc;
 	}
 
-	public void setImg(MultipartFile img) {
-		this.img = img;
+	public void setDesc(String desc) {
+		this.desc = desc;
 	}
 
 	public LocalDate getFromDate() {
@@ -76,5 +83,10 @@ public class CardEntity {
 	public void setToDate(LocalDate toDate) {
 		this.toDate = toDate;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "CardEntity [id=" + id + ", name=" + name + ", title=" + title + ", desc=" + desc + ", fromDate="
+				+ fromDate + ", toDate=" + toDate + "]";
+	}
 }

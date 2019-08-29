@@ -1,0 +1,59 @@
+@charset "ISO-8859-1";
+html, body {
+    height: 100%;
+    margin: 0px;
+	background-color:#242F92;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+#title{
+	padding: 20px;
+	font-size:40px;
+	font-weight:600;
+	text-align:center;
+}
+
+#image{
+	left: 50%;
+	transform: translateX(-50%);
+	position: relative;
+	border-radius: 50%;
+	width: 350px;
+	height: 350px;
+}
+
+#name{
+	text-align:center;
+	font-size:30px;
+	font-weight:600;
+}
+
+#desc{
+	font-size:20px;
+	font-weight:600;
+}
+
+.top{
+	width:100%;
+}
+
+.left{
+	width:50%;
+	heigth:500px !important;
+	float:left;
+}
+
+.right{
+	width:50%;
+	height:;
+	float:left;
+}
+
+.frame{
+	background-color:white;
+	position:fixed;
+	left:5%;
+	top:5%;
+	width:90%;
+	height:90%;
+}
