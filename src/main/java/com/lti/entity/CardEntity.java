@@ -19,7 +19,6 @@ public class CardEntity {
 	@SequenceGenerator(name = "leaderboard_seq", sequenceName = "leaderboard_seq", allocationSize = 1)
 	@Column(name = "ID")
 	private int id;
-	// leaderboard_seq
 
 	@Column(name = "NAME")
 	private String name;
@@ -35,6 +34,9 @@ public class CardEntity {
 
 	@Column(name = "TO_DATE")
 	private LocalDate toDate;
+	
+	@Column(name = "IMAGE")
+    private byte[] image;
 
 	public int getId() {
 		return id;
@@ -82,6 +84,14 @@ public class CardEntity {
 
 	public void setToDate(LocalDate toDate) {
 		this.toDate = toDate;
+	}
+	
+	public byte[] getImage() {
+		return image;
+	}
+
+	public void setImage(byte[] image) {
+		this.image = image;
 	}
 
 	@Override

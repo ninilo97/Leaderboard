@@ -1,0 +1,15 @@
+@charset "ISO-8859-1";
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+.frame{
+	background-color:white;
+	float:left;
+	left:5%;
+	top:5%;
+	width:90%;
+	height:90%;
+}

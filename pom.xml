@@ -14,7 +14,7 @@
 		<dbcp2.version>2.6.0</dbcp2.version>
 	</properties>
 
-	<dependencies>
+	<dependencies>	
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>

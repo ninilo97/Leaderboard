@@ -9,6 +9,11 @@ input[type=date] {
   padding: 1px 1px 1px 1px;
 }
 
+input[type=file]{
+	display: none;
+    opacity: 0;
+}
+
 ::-webkit-input-placeholder {
 	padding:0px;
 }
@@ -29,20 +34,26 @@ input{
 }
 
 body{
-	background: #00BBF2;
-	background: -webkit-linear-gradient(to right, #00BBF2, #242F92);
-	background: linear-gradient(to right, #00BBF2, #242F92);
+	background-image: url(bg.png);
+  	background-repeat: no-repeat;
+  	background-size: 100% 120%;
+	//background: #C8F0FC;
+	//background: -webkit-linear-gradient(to right, #C8F0FC, #00BBF2);
+	//background: linear-gradient(to right, #C8F0FC, #00BBF2);
+	//background: #00BBF2;
+	//background: -webkit-linear-gradient(to right, #00BBF2, #242F92);
+	//background: linear-gradient(to right, #00BBF2, #242F92);
 }
 
 .regform{
-	margin: 10px auto 0px auto;
+	margin: 100px auto 0px auto;
 	width: 40%;
 	border: 1px solid #00BBF2;
 	border-radius: 5px;
 	padding:14px 18px;
 }
 
-.form input:not([class="btn"]):not([class="checkbox"]){
+.form input:not([class="btn"]):not([class="checkbox"]):not([class="imageBtn"]){
 	width: 100%;
 	height: 25px;
 	border: 1px solid grey;
@@ -56,11 +67,13 @@ body{
 }
 
 .form fieldset{
-    padding: 0px;
 	border : 0;
-	background: #00BBF2;
-	background: -webkit-linear-gradient(to right, #00BBF2, #242F92);
-	background: linear-gradient(to right, #00BBF2, #242F92);
+	//background: #C8F0FC;
+	//background: -webkit-linear-gradient(to right, #C8F0FC, #00BBF2);
+	//background: linear-gradient(to right, #C8F0FC, #00BBF2);
+	background: #00C5FB;
+	//background: -webkit-linear-gradient(to right, #00BBF2, #242F92);
+	//background: linear-gradient(to right, #00BBF2, #242F92);
 }
 
 .form .lfield {
@@ -79,6 +92,7 @@ body{
 .form fieldset{
     padding: 0px;
 	border : 0;
+	box-shadow:1px 3px 3px 1px rgba(0,0,0,.5);
 	//background: #000000;
 	//background: -webkit-linear-gradient(to right, #156349, #000000);
 	//background: linear-gradient(to right, #156349, #000000);
@@ -86,7 +100,7 @@ body{
 
 .desc{
 	padding: 0px 0px 2px 0px;
-	font-family:"Arial";
+	font-family: 'Dosis', sans-serif;
 	font-size:15px;
 	font-weight:600;
 	color: #00008C;
@@ -98,16 +112,31 @@ body{
     margin: 0 auto;
     padding: 10px;
     position: relative;
-	font-family:"Arial";
+	font-family: 'Dosis', sans-serif;
 	font-weight:600;
 	color: #00008C;
 	font-size:30px;
 }
 
+.imageBtn{
+	font-weight:600;
+	font-size:15px;
+	color: #00008C;
+    opacity:1;
+	
+    width: 100%;
+	height: 25px;
+	border:1px #00008C;
+	border-radius:2px;
+	
+	background: #00BBF2;
+	box-shadow:1px 3px 3px 1px rgba(0,0,0,.5);
+}
+
 .btn{
 	font-weight:600;
 	font-size:20px;
-	color:white;
+	color:#C8F0FC;
     opacity:1;
 	
     width: 100%;
@@ -115,9 +144,9 @@ body{
 	border:1px #00BBF2;
 	border-radius:2px;
 	
-	background: #00BBF2;
-	background: -webkit-linear-gradient(to right, #00BBF2, #242F92);
-	background: linear-gradient(to right, #00BBF2, #242F92);
+	background: #00008C;
+	//background: -webkit-linear-gradient(to right, #00BBF2, #242F92);
+	//background: linear-gradient(to right, #00BBF2, #242F92);
 	box-shadow:1px 3px 3px 1px rgba(0,0,0,.5);
 	//#00BBF2
 	//#242F92

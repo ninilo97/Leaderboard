@@ -23,12 +23,14 @@ html, body {
 }
 
 #name{
+	padding: 20px;
 	text-align:center;
 	font-size:30px;
 	font-weight:600;
 }
 
 #desc{
+	padding: 20px;
 	font-size:20px;
 	font-weight:600;
 }

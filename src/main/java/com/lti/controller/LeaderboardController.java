@@ -1,5 +1,7 @@
 package com.lti.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,7 +19,6 @@ public class LeaderboardController {
 	@SuppressWarnings("finally")
 	@PostMapping("/addCard.lti")
 	public boolean addCard(@RequestBody CardEntity card) {
-		System.out.println(card.toString());
 		boolean flag=false;
 		try {
 			service.addCard(card);
@@ -27,5 +28,17 @@ public class LeaderboardController {
 		} finally {
 			return flag;
 		}
+	}
+
+	@SuppressWarnings("finally")
+	@PostMapping("/fetchCards.lti")
+	public List<CardEntity> fetchCard() {
+		return service.fetchCard();
+	}
+	
+	@SuppressWarnings("finally")
+	@PostMapping("/fetchAllCard.lti")
+	public List<CardEntity> fetchAllCard() {
+		return service.fetchAllCard();
 	}
 }
