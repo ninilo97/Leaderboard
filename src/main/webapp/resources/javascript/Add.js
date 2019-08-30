@@ -57,7 +57,7 @@ $(function() {
 		formData.append('desc', $("#description").val()); 
 		formData.append('fromDate', $("#fromDate").val()); 
 		formData.append('toDate', $("#toDate").val()); 
-		formData.append('image', $('form')[0]);
+		formData.append('image', $('#imageO').get(0).files[0]);
 		
 		var obj = {
 			name : $("#name").val(),
@@ -73,7 +73,6 @@ $(function() {
 		    contentType: false,
 		    processData: false,
 			data : formData,
-			contentType : 'application/json',
 			success : function(response) {
 				if (response == true) {
 					fetchAllTitle();

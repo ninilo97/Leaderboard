@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.lti.entity.CardEntity;
@@ -18,7 +17,7 @@ public class LeaderboardController {
 
 	@SuppressWarnings("finally")
 	@PostMapping("/addCard.lti")
-	public boolean addCard(@RequestBody CardEntity card) {
+	public boolean addCard(CardEntity card) {
 		boolean flag=false;
 		try {
 			service.addCard(card);

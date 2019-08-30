@@ -16,14 +16,14 @@ $(document).ready(function() {
 	
 	function success(x){
 		$.each(JSON.parse(list), function(idx, element) {
-	      setTimeout( function(){
-		    $("#imageD").empty();
-	    	$("#imageD").append( "<img id='image' src=resources/images/test.png alt='Img'>");
-			$("#title").text(element.title);
-			$("#name").text(element.name);
-			$("#desc").text(element.desc);
-	      }, time)
-	      time += delayTime;
+			setTimeout( function(){
+			  $("#imageD").empty();
+			  $("#imageD").append( "<img id='image' src='data:image/png;base64,"+element.image+"' alt='Img'>");
+			  $("#title").text(element.title);
+			  $("#name").text(element.name);
+			  $("#desc").text(element.desc);
+			}, time)
+			time += delayTime;
 		});
 		if(!x) return;
 		success(--x);

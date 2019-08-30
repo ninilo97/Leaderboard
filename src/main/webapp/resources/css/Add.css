@@ -37,19 +37,11 @@ body{
 	background-image: url(bg.png);
   	background-repeat: no-repeat;
   	background-size: 100% 120%;
-	//background: #C8F0FC;
-	//background: -webkit-linear-gradient(to right, #C8F0FC, #00BBF2);
-	//background: linear-gradient(to right, #C8F0FC, #00BBF2);
-	//background: #00BBF2;
-	//background: -webkit-linear-gradient(to right, #00BBF2, #242F92);
-	//background: linear-gradient(to right, #00BBF2, #242F92);
 }
 
 .regform{
 	margin: 100px auto 0px auto;
 	width: 40%;
-	border: 1px solid #00BBF2;
-	border-radius: 5px;
 	padding:14px 18px;
 }
 
@@ -68,12 +60,7 @@ body{
 
 .form fieldset{
 	border : 0;
-	//background: #C8F0FC;
-	//background: -webkit-linear-gradient(to right, #C8F0FC, #00BBF2);
-	//background: linear-gradient(to right, #C8F0FC, #00BBF2);
-	background: #00C5FB;
-	//background: -webkit-linear-gradient(to right, #00BBF2, #242F92);
-	//background: linear-gradient(to right, #00BBF2, #242F92);
+	background: #d2d2d2;
 }
 
 .form .lfield {
@@ -93,9 +80,6 @@ body{
     padding: 0px;
 	border : 0;
 	box-shadow:1px 3px 3px 1px rgba(0,0,0,.5);
-	//background: #000000;
-	//background: -webkit-linear-gradient(to right, #156349, #000000);
-	//background: linear-gradient(to right, #156349, #000000);
 }
 
 .desc{
@@ -133,6 +117,13 @@ body{
 	box-shadow:1px 3px 3px 1px rgba(0,0,0,.5);
 }
 
+
+.lfielde{
+    width: auto;
+    height: auto;
+	margin: 0 auto;
+    padding: 10px 15px 15px 15px;
+}
 .btn{
 	font-weight:600;
 	font-size:20px;
@@ -145,9 +136,4 @@ body{
 	border-radius:2px;
 	
 	background: #00008C;
-	//background: -webkit-linear-gradient(to right, #00BBF2, #242F92);
-	//background: linear-gradient(to right, #00BBF2, #242F92);
-	box-shadow:1px 3px 3px 1px rgba(0,0,0,.5);
-	//#00BBF2
-	//#242F92
 }
